@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+}
+
+table.cart-table {
+    table-layout: fixed;
+}
+
+table,
+th,
+td {
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px grey solid;
+}
+
+.product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.price-total {
+    text-align: right;
+    width: 90%;
+}

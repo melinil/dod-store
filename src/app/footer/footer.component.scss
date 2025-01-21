@@ -1,0 +1,14 @@
+footer{
+    text-align: center;
+    .social-links{
+        mat-icon{
+            margin: 2rem;
+        }
+    }
+    .footer-links a{
+        margin: 2rem;
+    }
+    .copyright{
+        margin: 2rem;
+    }
+}
