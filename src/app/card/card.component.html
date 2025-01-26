@@ -1,10 +1,12 @@
-<div class="card" >
-    <img src="../../assets/shoes.webp" class="card-img-top" alt="Product Image">
-    <div class="card-body">
-        <div class="card-details">
-            <span class="product-name">PRODUCT #1</span>
-            <span class="product-price">19.99$</span>
-        </div>
-        <a href="#" class="btn btn-primary card-button">ADD TO CART</a>
+<div class="card">
+  <img src="../../assets/shoes.webp" class="card-img-top" alt="Product Image" />
+  <div class="card-body">
+    <div class="card-details">
+      <span class="product-name">{{ product?.name }}</span>
+      <span class="product-price">{{ product?.price }}</span>
     </div>
+    <button class="btn btn-primary card-button" (click)="addToCart(product)">
+      {{ "add to cart" | uppercase }}
+    </button>
+  </div>
 </div>

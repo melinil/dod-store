@@ -1,0 +1,140 @@
+[
+    {
+      "name": "Shoes 1",
+      "price": 59.99,
+      "photoUrl": "https://example.com/images/headphones.jpg",
+      "unitsAvailable": 120,
+      "unitsSold": 500,
+      "description": "Shoes 1 description text",
+      "categories": ["men", "shoes"]
+    },
+    {
+        "name": "Shoes 2",
+        "price": 59.99,
+        "photoUrl": "https://example.com/images/headphones.jpg",
+        "unitsAvailable": 120,
+        "unitsSold": 500,
+        "description": "Shoes 1 description text",
+        "categories": ["men", "shoes"]
+      },
+      {
+        "name": "Shoes 3",
+        "price": 59.99,
+        "photoUrl": "https://example.com/images/headphones.jpg",
+        "unitsAvailable": 120,
+        "unitsSold": 500,
+        "description": "Shoes 1 description text",
+        "categories": ["men", "shoes"]
+      },
+      {
+        "name": "Shoes 4",
+        "price": 59.99,
+        "photoUrl": "https://example.com/images/headphones.jpg",
+        "unitsAvailable": 120,
+        "unitsSold": 503,
+        "description": "Shoes 1 description text",
+        "categories": ["men", "shoes"]
+      },
+      {
+        "name": "Shoes 5",
+        "price": 59.99,
+        "photoUrl": "https://example.com/images/headphones.jpg",
+        "unitsAvailable": 120,
+        "unitsSold": 500,
+        "description": "Shoes 1 description text",
+        "categories": ["men", "shoes"]
+      },
+
+      {
+        "name": "Jackets 1",
+        "price": 59.99,
+        "photoUrl": "https://example.com/images/headphones.jpg",
+        "unitsAvailable": 120,
+        "unitsSold": 504,
+        "description": "Shoes 1 description text",
+        "categories": ["men", "shoes"]
+      },
+      {
+        "name": "Jackets 2",
+        "price": 59.99,
+        "photoUrl": "https://example.com/images/headphones.jpg",
+        "unitsAvailable": 120,
+        "unitsSold": 500,
+        "description": "Shoes 1 description text",
+        "categories": ["men", "shoes"]
+      },
+      {
+        "name": "Jackets 3",
+        "price": 59.99,
+        "photoUrl": "https://example.com/images/headphones.jpg",
+        "unitsAvailable": 120,
+        "unitsSold": 500,
+        "description": "Shoes 1 description text",
+        "categories": ["men", "shoes"]
+      },
+      {
+        "name": "Jackets 4",
+        "price": 59.99,
+        "photoUrl": "https://example.com/images/headphones.jpg",
+        "unitsAvailable": 120,
+        "unitsSold": 500,
+        "description": "Shoes 1 description text",
+        "categories": ["men", "shoes"]
+      },
+      {
+        "name": "Jackets 5",
+        "price": 59.99,
+        "photoUrl": "https://example.com/images/headphones.jpg",
+        "unitsAvailable": 120,
+        "unitsSold": 500,
+        "description": "Shoes 1 description text",
+        "categories": ["men", "shoes"]
+      },
+
+
+      {
+        "name": "Hats 1",
+        "price": 59.99,
+        "photoUrl": "https://example.com/images/headphones.jpg",
+        "unitsAvailable": 120,
+        "unitsSold": 500,
+        "description": "Shoes 1 description text",
+        "categories": ["men", "shoes"]
+      },
+      {
+        "name": "Hats 2",
+        "price": 59.99,
+        "photoUrl": "https://example.com/images/headphones.jpg",
+        "unitsAvailable": 120,
+        "unitsSold": 500,
+        "description": "Shoes 1 description text",
+        "categories": ["men", "shoes"]
+      },
+      {
+        "name": "Hats 3",
+        "price": 59.99,
+        "photoUrl": "https://example.com/images/headphones.jpg",
+        "unitsAvailable": 120,
+        "unitsSold": 500,
+        "description": "Shoes 1 description text",
+        "categories": ["men", "shoes"]
+      },
+      {
+        "name": "Hats 4",
+        "price": 59.99,
+        "photoUrl": "https://example.com/images/headphones.jpg",
+        "unitsAvailable": 120,
+        "unitsSold": 502,
+        "description": "Shoes 1 description text",
+        "categories": ["men", "shoes"]
+      },
+      {
+        "name": "Hats 5",
+        "price": 59.99,
+        "photoUrl": "https://example.com/images/headphones.jpg",
+        "unitsAvailable": 120,
+        "unitsSold": 501,
+        "description": "Shoes 1 description text",
+        "categories": ["men", "shoes"]
+      }
+]
