@@ -1,0 +1,39 @@
+.product-card {
+    width: 300px;
+    text-align: center;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.item-name {
+    font-weight: bold;
+    color: #54504e;
+}
+
+.item-price {
+    color: #54504e;
+    font-weight: bold;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.add-to-cart {
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+    background-color: #54504e;
+    color: white;
+}
+
+.card-img-top {
+    cursor: pointer;
+}

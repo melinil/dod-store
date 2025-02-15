@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { Product } from '../interfaces/product';
 
 @Injectable({
   providedIn: 'root',
@@ -9,11 +10,10 @@ export class CartService {
 
   constructor() {}
 
-  addItem(item: any): void {
+  addItem(item: Product): void {
     let currentCart = this.cart.getValue();
     currentCart.push(item as never);
     this.cart.next(currentCart);
-    console.log(this.cart);
   }
 
   removeItem(index: number): void {
@@ -23,7 +23,6 @@ export class CartService {
   }
 
   getCartItems(): BehaviorSubject<[]> {
-    console.log(this.cart);
     return this.cart;
   }
 }

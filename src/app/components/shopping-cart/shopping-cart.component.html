@@ -1,0 +1,23 @@
+<div class="cart-item-container" *ngFor="let item of cartItems; let i = index">
+  <mat-card class="cart-item">
+    <div class="image-container">
+      <img mat-card-image src={{item.photoUrl}} alt="Item Image">
+    </div>
+
+    <div class="item-details">
+      <h3>{{ item.name }}</h3>
+      <div class="item-quantity">
+        <label>Quantity:</label>
+        <input matInput type="number" [(ngModel)]="quantity" min="1">
+      </div>
+    </div>
+
+    <div class="item-price">
+      <h3>{{ item.price }}</h3>
+    </div>
+
+    <button mat-button (click)="removeItem(i)">
+      Delete
+    </button>
+  </mat-card>
+</div>

@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { LoginComponent } from './login/login.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
-import { HomeComponent } from './home/home.component';
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component'
-import { DetailsComponent } from './details/details.component';
-import { ShopPageComponent } from './shop-page/shop-page.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { HomeComponent } from './components/home/home.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component'
+import { DetailsComponent } from './components/details/details.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
 
 const routes: Routes = [
   {
@@ -31,12 +31,13 @@ const routes: Routes = [
     component: ShoppingCartComponent
   },
   {
-    path: "product-details",
-    component: DetailsComponent
+    path: "profile",
+    component: UserProfileComponent
   },
   {
     path: "shop",
-    component: ShopPageComponent
+    loadChildren: () =>
+      import('./products/products.module').then(m => m.ProductsModule)
   },
   {
     path: "**",

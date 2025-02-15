@@ -2,139 +2,154 @@
     {
       "name": "Shoes 1",
       "price": 59.99,
-      "photoUrl": "https://example.com/images/headphones.jpg",
+      "photoUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXxlbnwwfHwwfHx8MA%3D%3D",
       "unitsAvailable": 120,
       "unitsSold": 500,
       "description": "Shoes 1 description text",
-      "categories": ["men", "shoes"]
+      "categories": ["men", "shoes"],
+      "id": "1"
     },
     {
         "name": "Shoes 2",
         "price": 59.99,
-        "photoUrl": "https://example.com/images/headphones.jpg",
+        "photoUrl": "https://www.shutterstock.com/image-photo/stability-cushion-running-shoes-new-260nw-1958445436.jpg",
         "unitsAvailable": 120,
         "unitsSold": 500,
         "description": "Shoes 1 description text",
-        "categories": ["men", "shoes"]
+        "categories": ["men", "shoes"],
+        "id": "2"
       },
       {
         "name": "Shoes 3",
         "price": 59.99,
-        "photoUrl": "https://example.com/images/headphones.jpg",
+        "photoUrl": "https://images-cdn.ubuy.co.in/6544ee93aa5343003e16e3ba-tsiodfo-men-39-s-sneakers-sport-running.jpg",
         "unitsAvailable": 120,
         "unitsSold": 500,
         "description": "Shoes 1 description text",
-        "categories": ["men", "shoes"]
+        "categories": ["men", "shoes"],
+        "id": "3"
       },
       {
-        "name": "Shoes 4",
+        "name": "Shoes 41",
         "price": 59.99,
-        "photoUrl": "https://example.com/images/headphones.jpg",
+        "photoUrl": "https://img.freepik.com/premium-photo/pair-sneakers-with-brand-name-brand-bottom_754951-18210.jpg",
         "unitsAvailable": 120,
         "unitsSold": 503,
         "description": "Shoes 1 description text",
-        "categories": ["men", "shoes"]
+        "categories": ["men", "shoes"],
+        "id": "4"
       },
       {
         "name": "Shoes 5",
         "price": 59.99,
-        "photoUrl": "https://example.com/images/headphones.jpg",
+        "photoUrl": "https://media.istockphoto.com/id/1350560575/photo/pair-of-blue-running-sneakers-on-white-background-isolated.jpg?s=612x612&w=0&k=20&c=A3w_a9q3Gz-tWkQL6K00xu7UHdN5LLZefzPDp-wNkSU=",
         "unitsAvailable": 120,
         "unitsSold": 500,
         "description": "Shoes 1 description text",
-        "categories": ["men", "shoes"]
+        "categories": ["men", "shoes"],
+        "id": "5"
       },
 
       {
         "name": "Jackets 1",
         "price": 59.99,
-        "photoUrl": "https://example.com/images/headphones.jpg",
+        "photoUrl": "https://4.imimg.com/data4/RU/VC/MY-11853389/men-s-jackets.jpg",
         "unitsAvailable": 120,
         "unitsSold": 504,
         "description": "Shoes 1 description text",
-        "categories": ["men", "shoes"]
+        "categories": ["men", "shoes"],
+        "id": "6"
       },
       {
         "name": "Jackets 2",
         "price": 59.99,
-        "photoUrl": "https://example.com/images/headphones.jpg",
+        "photoUrl": "https://static8.depositphotos.com/1559986/1051/i/450/depositphotos_10513998-stock-photo-red-jacket.jpg",
         "unitsAvailable": 120,
         "unitsSold": 500,
         "description": "Shoes 1 description text",
-        "categories": ["men", "shoes"]
+        "categories": ["men", "shoes"],
+        "id": "7"
       },
       {
         "name": "Jackets 3",
         "price": 59.99,
-        "photoUrl": "https://example.com/images/headphones.jpg",
+        "photoUrl": "https://m.media-amazon.com/images/I/71E7c09iTdL._AC_UY1100_.jpg",
         "unitsAvailable": 120,
         "unitsSold": 500,
         "description": "Shoes 1 description text",
-        "categories": ["men", "shoes"]
+        "categories": ["men", "shoes"],
+        "id": "8"
       },
       {
         "name": "Jackets 4",
         "price": 59.99,
-        "photoUrl": "https://example.com/images/headphones.jpg",
+        "photoUrl": "https://t4.ftcdn.net/jpg/02/36/49/63/360_F_236496348_Pejh1LNDLjsmyDYngfli9n8SNRAARevg.jpg",
         "unitsAvailable": 120,
         "unitsSold": 500,
         "description": "Shoes 1 description text",
-        "categories": ["men", "shoes"]
+        "categories": ["men", "shoes"],
+        "id": "9"
       },
       {
         "name": "Jackets 5",
         "price": 59.99,
-        "photoUrl": "https://example.com/images/headphones.jpg",
+        "photoUrl": "https://media.istockphoto.com/id/163208487/photo/male-coat-isolated-on-the-white.jpg?s=612x612&w=0&k=20&c=3Sdq5xnVS2jOYPNXI6JLwAumzyelcP_VgKVW0MVUhwo=",
         "unitsAvailable": 120,
         "unitsSold": 500,
         "description": "Shoes 1 description text",
-        "categories": ["men", "shoes"]
+        "categories": ["men", "shoes"],
+        "id": "10"
       },
 
 
       {
         "name": "Hats 1",
         "price": 59.99,
-        "photoUrl": "https://example.com/images/headphones.jpg",
+        "photoUrl": "https://t3.ftcdn.net/jpg/02/75/74/58/360_F_275745846_slBI2EsTudIShef6hMliS6Oa123tC9Zv.jpg",
         "unitsAvailable": 120,
         "unitsSold": 500,
         "description": "Shoes 1 description text",
-        "categories": ["men", "shoes"]
+        "categories": ["men", "shoes"],
+        "id": "11"
       },
       {
         "name": "Hats 2",
         "price": 59.99,
-        "photoUrl": "https://example.com/images/headphones.jpg",
+        "photoUrl": "https://m.media-amazon.com/images/I/81T-W+2GShL._AC_UY1100_.jpg",
         "unitsAvailable": 120,
         "unitsSold": 500,
         "description": "Shoes 1 description text",
-        "categories": ["men", "shoes"]
+        "categories": ["men", "shoes"],
+        "id": "12"
       },
       {
         "name": "Hats 3",
         "price": 59.99,
-        "photoUrl": "https://example.com/images/headphones.jpg",
+        "photoUrl": "https://underarmour.scene7.com/is/image/Underarmour/1384048-001_SLB_SL?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708",
         "unitsAvailable": 120,
         "unitsSold": 500,
         "description": "Shoes 1 description text",
-        "categories": ["men", "shoes"]
+        "categories": ["men", "shoes"],
+        "id": "13"
       },
       {
         "name": "Hats 4",
         "price": 59.99,
-        "photoUrl": "https://example.com/images/headphones.jpg",
+        "photoUrl": "https://static.caphunters.de/42186-large_default/new-era-flat-brim-9fifty-cotton-black-snapback-cap.webp",
         "unitsAvailable": 120,
         "unitsSold": 502,
         "description": "Shoes 1 description text",
-        "categories": ["men", "shoes"]
+        "categories": ["men", "shoes"],
+        "id": "14"
       },
       {
         "name": "Hats 5",
         "price": 59.99,
-        "photoUrl": "https://example.com/images/headphones.jpg",
+        "photoUrl": "https://sainc2.myshopify.com/cdn/shop/files/kids-fun-bucket-dino-biker-front-ss21-rev2-2500px_5374cd28-a932-44dc-a5b7-704a02252971.jpg?v=1715706913&width=2500",
         "unitsAvailable": 120,
         "unitsSold": 501,
         "description": "Shoes 1 description text",
-        "categories": ["men", "shoes"]
+        "categories": ["men", "shoes"],
+        "id": "15"
       }
 ]
