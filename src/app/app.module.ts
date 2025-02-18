@@ -26,7 +26,13 @@ import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
-import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ConfirmationDialogComponent } from './components/confirmation-dialog/confirmation-dialog.component';
+import { EmailValidatorDirective } from './validators/email-validator.directive';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSelectModule } from '@angular/material/select';
+import { MatListModule } from '@angular/material/list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +50,8 @@ import { MatToolbarModule } from "@angular/material/toolbar";
     DeliveryInformationComponent,
     CartCardComponent,
     NotFoundComponent,
+    ConfirmationDialogComponent,
+    EmailValidatorDirective,
   ],
   imports: [
     BrowserModule,
@@ -60,8 +68,12 @@ import { MatToolbarModule } from "@angular/material/toolbar";
     HttpClientModule,
     MatCardModule,
     MatToolbarModule,
+    MatDialogModule,
+    MatSidenavModule,
+    MatSelectModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

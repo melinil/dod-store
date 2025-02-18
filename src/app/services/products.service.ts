@@ -10,26 +10,16 @@ export class ProductsService {
   constructor(private http: HttpClient) {}
 
   fetchProducts(): Observable<any[]> {
-    return this.http.get<any[]>('../../assets/products.json');
+    return this.http.get<any[]>('https://fakestoreapi.com/products');
   }
 
   getBestSellingItems(): Observable<any[]> {
-    return this.http
-      .get<any[]>('../../assets/products.json')
-      .pipe(
-        map((products) =>
-          products.sort((a, b) => b.unitsSold - a.unitsSold).slice(0, 4)
-        )
-      );
+    return this.http.get<any[]>(
+      'https://fakestoreapi.com/products?sort=desc&limit=4'
+    );
   }
 
   getItemById(id: string): Observable<any> {
-    return this.http
-      .get<any>('../../assets/products.json')
-      .pipe(
-        map((products) =>
-          products.find((element: any) => element.id===id)
-        )
-      );
+    return this.http.get<any>('https://fakestoreapi.com/products/' + id);
   }
 }

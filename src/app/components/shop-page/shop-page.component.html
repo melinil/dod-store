@@ -1,11 +1,53 @@
-<div class="container">
-  <h1>All products</h1>
-  <div class="row">
-    <div
-      class="col-xs-3 col-sm-3 col-md-3 col-lg-3"
-      *ngFor="let product of allProducts"
+<mat-drawer-container class="drawer-container">
+  <!-- Drawer (Sidebar) -->
+  <mat-drawer mode="side" opened class="drawer">
+    <h3>Filters</h3>
+
+    <!-- Search by Name -->
+    <mat-form-field appearance="outline">
+      <mat-label>Search</mat-label>
+      <input matInput [(ngModel)]="searchText" placeholder="Enter name" />
+    </mat-form-field>
+
+    <!-- Sort by Name or Price -->
+    <mat-form-field appearance="outline">
+      <mat-label>Sort By</mat-label>
+      <mat-select [(ngModel)]="sortBy">
+        <mat-option value="name">Name</mat-option>
+        <mat-option value="price">Price</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <!-- Filter by Category -->
+    <mat-form-field appearance="outline">
+      <mat-label>Category</mat-label>
+      <mat-select [(ngModel)]="selectedCategory">
+        <mat-option value="">All</mat-option>
+        <mat-option *ngFor="let category of categories" [value]="category">
+          {{ category }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-drawer>
+
+  <!-- Main Content -->
+  <mat-drawer-content class="content">
+    <!-- <div class="container">
+      <h1>All products</h1>
+      <div *ngFor="let product of filteredItems()">
+        <app-card [product]="product"></app-card>
+      </div>
+    </div> -->
+    <mat-grid-list
+      cols="4"
+      rowHeight="1:1"
+      gutterSize="10px"
+      class="grid-container"
     >
-      <app-card [product]="product"></app-card>
-    </div>
-  </div>
-</div>
+      <h1>Best selling</h1>
+      <mat-grid-tile *ngFor="let product of filteredItems()" class="grid-title">
+        <app-card [product]="product"></app-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-drawer-content>
+</mat-drawer-container>

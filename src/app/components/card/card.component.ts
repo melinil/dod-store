@@ -2,6 +2,8 @@ import { Component, Input, OnInit } from '@angular/core';
 import { CartService } from '../../services/cart.service';
 import { Product } from 'src/app/interfaces/product';
 import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+import { ConfirmationDialogComponent } from '../confirmation-dialog/confirmation-dialog.component';
 
 @Component({
   selector: 'app-card',
@@ -10,16 +12,20 @@ import { Router } from '@angular/router';
 })
 export class CardComponent implements OnInit {
   @Input() product!: Product;
-  constructor(private cartService: CartService, private router: Router) { }
+  constructor(
+    private cartService: CartService,
+    private router: Router,
+    private dialog: MatDialog
+  ) {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   addToCart(product: Product): void {
     this.cartService.addItem(product);
-    alert(`${product.name} added to cart!`);
+    this.dialog.open(ConfirmationDialogComponent);
   }
 
   openProductDetails(productId?: string) {
-    this.router.navigate(['shop/product', productId])
+    this.router.navigate(['shop/product', productId]);
   }
 }

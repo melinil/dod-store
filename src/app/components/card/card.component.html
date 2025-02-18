@@ -1,12 +1,20 @@
 <mat-card class="product-card">
-  <img mat-card-image src={{product.photoUrl}} alt="Product Image" class="card-img-top" (click)="openProductDetails(product.id)">
+  <img
+    mat-card-image
+    src="{{ product.image }}"
+    alt="Product Image"
+    class="card-img-top"
+    (click)="openProductDetails(product.id)"
+  />
   <mat-card-content>
     <div class="card-details" (click)="openProductDetails(product.id)">
-      <span class="item-name">{{ product.name }}</span>
+      <span class="item-name">{{ product.title }}</span>
       <span class="item-price">{{ product.price }}</span>
     </div>
   </mat-card-content>
   <mat-card-actions class="card-actions">
-    <button mat-button class="add-to-cart" (click)="addToCart(product)">{{ "add to cart" | uppercase }}</button>
+    <button mat-button class="add-to-cart" (click)="addToCart(product)">
+      {{ "add to cart" | uppercase }}
+    </button>
   </mat-card-actions>
 </mat-card>

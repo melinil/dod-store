@@ -1,24 +1,22 @@
 <div class="cart-item-container">
-    <mat-card class="cart-item">
-        <div class="image-container">
-            <img mat-card-image src={{product.photoUrl}} alt="Item Image">
-        </div>
+  <mat-card class="cart-item">
+    <div class="image-container">
+      <img mat-card-image src="{{ product.image }}" alt="Item Image" />
+    </div>
 
-        <div class="item-details">
-            <h3>{{product.name}}</h3>
-            <p>{{product.description}}</p>
-            <div class="item-quantity">
-                <label>Quantity:</label>
-                <input matInput type="number" [(ngModel)]="quantity" min="1">
-            </div>
-        </div>
+    <div class="item-details">
+      <h3>{{ product.title }}</h3>
+      <p>{{ product.description }}</p>
+      <div class="item-quantity">
+        <label>Quantity:</label>
+        <input matInput type="number" [(ngModel)]="quantity" min="1" />
+      </div>
+    </div>
 
-        <div class="item-price">
-            <h3>{{product.price}}</h3>
-        </div>
+    <div class="item-price">
+      <h3>{{ product.price }}</h3>
+    </div>
 
-        <button mat-stroked-button (click)="addToCart(product)">
-            Add to cart
-        </button>
-    </mat-card>
+    <button mat-stroked-button (click)="addToCart(product)">Add to cart</button>
+  </mat-card>
 </div>
