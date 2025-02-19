@@ -3,8 +3,9 @@
   <nav>
     <a mat-button routerLink="/home">home</a>
     <a mat-button routerLink="/shop">shop</a>
-    <a mat-button routerLink="/profile">my profile</a>
-    <a mat-button routerLink="/login">sign in</a>
+    <a mat-button routerLink="/profile" *ngIf="authService.isLoggedIn()">my profile</a>
+    <a mat-button routerLink="/login" *ngIf="!authService.isLoggedIn()">sign in</a>
     <a mat-button routerLink="/cart">cart</a>
+    <a mat-button routerLink="/home" *ngIf="authService.isLoggedIn()" (click)="authService.logout()">logout</a>
   </nav>
 </mat-toolbar>

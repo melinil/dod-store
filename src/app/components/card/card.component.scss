@@ -1,6 +1,7 @@
 .product-card {
-    width: 300px;
+    width: 20rem;
     text-align: center;
+    height: 30rem;
 }
 
 .card-details {
@@ -35,5 +36,7 @@
 }
 
 .card-img-top {
+    height: 60%;
+    width: 22rem;
     cursor: pointer;
 }

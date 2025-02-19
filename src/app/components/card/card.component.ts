@@ -16,16 +16,16 @@ export class CardComponent implements OnInit {
     private cartService: CartService,
     private router: Router,
     private dialog: MatDialog
-  ) {}
+  ) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   addToCart(product: Product): void {
     this.cartService.addItem(product);
     this.dialog.open(ConfirmationDialogComponent);
   }
 
-  openProductDetails(productId?: string) {
-    this.router.navigate(['shop/product', productId]);
+  openProductDetails(productCategory?: string, productId?: string) {
+    this.router.navigate(['shop/product', productCategory, productId]);
   }
 }

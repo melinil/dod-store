@@ -9,7 +9,7 @@ const routes: Routes = [
     component: ShopPageComponent
   },
   {
-    path: "product/:id",
+    path: "product/:category/:id",
     component: DetailsComponent
   },
 ]

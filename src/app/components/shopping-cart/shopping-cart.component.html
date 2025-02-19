@@ -1,21 +1,55 @@
-<div class="cart-item-container" *ngFor="let item of cartItems; let i = index">
-  <mat-card class="cart-item">
-    <div class="image-container">
-      <img mat-card-image src="{{ item.image }}" alt="Item Image" />
-    </div>
-
-    <div class="item-details">
-      <h3>{{ item.title }}</h3>
-      <div class="item-quantity">
-        <label>Quantity:</label>
-        <input matInput type="number" [(ngModel)]="quantity" min="1" />
+<div *ngIf="cartItems.length > 0; else emptyCart">
+  <div class="cart-item-container" *ngFor="let item of cartItems; let i = index">
+    <mat-card class="cart-item">
+      <div class="image-container">
+        <img mat-card-image src="{{ item.image }}" alt="Item Image" />
       </div>
-    </div>
 
-    <div class="item-price">
-      <h3>{{ item.price }}</h3>
-    </div>
+      <div class="item-details">
+        <h3>{{ item.title }}</h3>
+        <div class="item-quantity">
+          <label>Quantity:</label>
+          <input matInput type="number" [(ngModel)]="quantity" min="1" />
+        </div>
+      </div>
 
-    <button mat-button (click)="removeItem(i)">Delete</button>
-  </mat-card>
+      <div class="item-price">
+        <h3>{{ item.price }}</h3>
+      </div>
+
+      <button mat-button (click)="removeItem(i)">Delete</button>
+    </mat-card>
+  </div>
+  <h1 class="sum-total">Total: {{totalPrice}}</h1>
+  <h1 *ngIf="!authService.isLoggedIn()">Please <a mat-button routerLink="/login">sign in</a> to continue!</h1>
+  <div class="container" *ngIf="authService.isLoggedIn()">
+    <h2>Delivery information</h2>
+    <form [formGroup]="deliveryForm" (ngSubmit)="submitOrder()">
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>First name</mat-label>
+        <input matInput formControlName="firstName">
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Last name</mat-label>
+        <input matInput formControlName="lastName">
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Phone</mat-label>
+        <input matInput formControlName="phoneNumber" type="tel">
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>City</mat-label>
+        <input matInput formControlName="city">
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Address</mat-label>
+        <input matInput formControlName="address">
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit" [disabled]="deliveryForm.invalid">Submit</button>
+    </form>
+  </div>
 </div>
+<ng-template #emptyCart>
+  <h1>Your cart is empty.</h1>
+</ng-template>

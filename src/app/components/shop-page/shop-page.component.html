@@ -1,15 +1,12 @@
 <mat-drawer-container class="drawer-container">
-  <!-- Drawer (Sidebar) -->
   <mat-drawer mode="side" opened class="drawer">
     <h3>Filters</h3>
 
-    <!-- Search by Name -->
     <mat-form-field appearance="outline">
       <mat-label>Search</mat-label>
       <input matInput [(ngModel)]="searchText" placeholder="Enter name" />
     </mat-form-field>
 
-    <!-- Sort by Name or Price -->
     <mat-form-field appearance="outline">
       <mat-label>Sort By</mat-label>
       <mat-select [(ngModel)]="sortBy">
@@ -18,7 +15,6 @@
       </mat-select>
     </mat-form-field>
 
-    <!-- Filter by Category -->
     <mat-form-field appearance="outline">
       <mat-label>Category</mat-label>
       <mat-select [(ngModel)]="selectedCategory">
@@ -30,14 +26,7 @@
     </mat-form-field>
   </mat-drawer>
 
-  <!-- Main Content -->
   <mat-drawer-content class="content">
-    <!-- <div class="container">
-      <h1>All products</h1>
-      <div *ngFor="let product of filteredItems()">
-        <app-card [product]="product"></app-card>
-      </div>
-    </div> -->
     <mat-grid-list
       cols="4"
       rowHeight="1:1"

@@ -1,46 +1,3 @@
-<!-- <div class="container login-container">
-  <h1>I already have an account</h1>
-  <h2>Sign in with your email and password</h2>
-  <form class="example-form">
-    <mat-form-field class="example-full-width" appearance="fill">
-      <mat-label>Email</mat-label>
-      <input
-        type="email"
-        matInput
-        [formControl]="emailFormControl"
-        [errorStateMatcher]="matcher"
-        placeholder="Ex. pat@example.com"
-      />
-      <mat-hint>Errors appear instantly!</mat-hint>
-      <mat-error
-        *ngIf="
-          emailFormControl.hasError('email') &&
-          !emailFormControl.hasError('required')
-        "
-      >
-        Please enter a valid email address
-      </mat-error>
-      <mat-error *ngIf="emailFormControl.hasError('required')">
-        Email is <strong>required</strong>
-      </mat-error>
-    </mat-form-field>
-    <p>
-      <mat-form-field class="example-full-width" appearance="fill">
-        <mat-label>Password</mat-label>
-        <input matInput type="password" />
-      </mat-form-field>
-    </p>
-    <button mat-stroked-button color="primary" class="card-button">
-      SIGN IN
-    </button>
-  </form>
-
-  <span
-    >If you don't have an account you can register
-    <a href="/signup">here</a></span
-  >
-</div> -->
-
 <div class="login-container">
   <mat-card class="login-card">
     <mat-card-title>Sign in</mat-card-title>
@@ -48,12 +5,12 @@
       <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <mat-form-field appearance="outline" class="full-width">
           <mat-label>Email</mat-label>
-          <input matInput formControlName="email" type="email" required>
+          <input matInput formControlName="email" type="email" required [(ngModel)]="email">
         </mat-form-field>
 
         <mat-form-field appearance="outline" class="full-width">
           <mat-label>Password</mat-label>
-          <input matInput formControlName="password" type="password" required>
+          <input matInput formControlName="password" type="password" required  [(ngModel)]="password">
         </mat-form-field>
 
         <button mat-raised-button color="primary" class="full-width" type="submit" [disabled]="loginForm.invalid">

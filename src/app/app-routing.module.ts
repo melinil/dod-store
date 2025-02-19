@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component'
 import { DetailsComponent } from './components/details/details.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { AuthGuard } from './services/auth.guard';
 
 const routes: Routes = [
   {
@@ -32,7 +33,8 @@ const routes: Routes = [
   },
   {
     path: "profile",
-    component: UserProfileComponent
+    component: UserProfileComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: "shop",
